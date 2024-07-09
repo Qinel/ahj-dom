@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
     box.append(div);
     board.push(div);
   }
-  
+
   let currentBox = 0;
 
   function moveGoblin() {
-    board[currentBox].innerHTML = '';
+    board[currentBox].innerHTML = "";
 
     currentBox = Math.floor(Math.random() * board.length);
     board[currentBox].append(goblin);
